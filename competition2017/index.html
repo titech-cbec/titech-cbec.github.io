@@ -2,139 +2,139 @@
 <html lang="ja">
     <head>
         <meta charset="UTF-8">
-	    <title>エンジニアリングデザインコンペ</title>
+	<title>エンジニアリングデザインコンペ</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	    <meta name="viewport" content="width=device-width">
-        <link rel="stylesheet" type="text/css" media="all" href="../css/style.css" />
+	<meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" type="text/css" media="all" href="style.css" />
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
         <script>
-        //a link要素
-            $(function(){
-                var headH = 0;
-                $('a[href^=#]').click(function() {
-                    var speed = 1000; // ミリ秒
-                    var href= $(this).attr("href");
-                    var target = $(href == "#" || href == "" ? 'html' : href);
-                    var position = target.offset().top - headH;
-                    $('body,html').animate({scrollTop:position}, speed, 'swing');
-                    return false;
-                });
-            });
+         //a link要素
+         $(function(){
+             var headH = 0;
+             $('a[href^=#]').click(function() {
+                 var speed = 1000; // ミリ秒
+                 var href= $(this).attr("href");
+                 var target = $(href == "#" || href == "" ? 'html' : href);
+                 var position = target.offset().top - headH;
+                 $('body,html').animate({scrollTop:position}, speed, 'swing');
+                 return false;
+             });
+         });
         </script>
     </head>
     
     <body>
         <header id="header" class="clearfix">
-          <div id="header_content">
-	       <div class="logo">
-               <a href="../index.html"><img src="../sub/image/title.png" height="40" alt="CBEC"/></a>
+            <div id="header_content">
+		<div class="logo">
+		    <a href="../index.html"><img src="images/title.png" height="40" alt="CBEC"/></a>
+		</div>
+		<nav id="nav" class="clearfix">
+		    <ul>
+			<!--			     <li class="linkabout"><a href="#about">コンペについて</a></li> -->
+			<!--                 <li><a href="#applications">成果物紹介</a></li> -->
+			<li class="linkGaiyou"><a href="#detail">開催概要</a></li>
+			<li class="linkContact"><a href="#contact">お問い合わせ</a></li>
+		    </ul>
+		</nav>
             </div>
-	       <nav id="nav" class="clearfix">
-		      <ul>
-<!--			     <li class="linkabout"><a href="#about">コンペについて</a></li> -->
-<!--                 <li><a href="#applications">成果物紹介</a></li> -->
-			     <li class="linkGaiyou"><a href="#detail">開催概要</a></li>
-			     <li class="linkContact"><a href="#contact">お問い合わせ</a></li>
-		      </ul>
-	       </nav>
-          </div>
         </header>
         <article id="contents">
             <section id="head">
-            <h2>東京工業大学 エンジニアリングデザインコンペティション</h2>
-	        </section>
+		<h2>東京工業大学 エンジニアリングデザインコンペティション</h2>
+	    </section>
             <section id="about">
-		        <div class="txt">
-			         <img src="../sub/image/20160213_compe.jpg" width="1000" height="684" alt="CBEC"/>
+		<div class="txt">
+		    <img src="images/20160213_compe.jpg" width="1000" height="684" alt="CBEC"/>
                 </div>
-		        <div class="blc">
-			         <p>今年もエンジニアリングデザインコンペを開催いたします。<br />
-このイベントは、社会的な課題に対するソリューション開発事例の発表会として全学オープンで開催するコンペです。<br />
-優秀チームは、東工大基金による学生スタートアップ支援が受けられます。また、2017年3月に開催される <a href="http://tokyo.slush.org/">Slush Tokyo</a>でのブース展示のサポートも受けられます。<br />
-見学も大歓迎です。参加費無料ですので、ぜひご参加ください！<br /></p>
-		        </div>
+		<div class="blc">
+		    <p>今年もエンジニアリングデザインコンペを開催いたします。<br />
+			このイベントは、社会的な課題に対するソリューション開発事例の発表会として全学オープンで開催するコンペです。<br />
+			優秀チームは、東工大基金による学生スタートアップ支援が受けられます。また、2017年3月に開催される <a href="http://tokyo.slush.org/">Slush Tokyo</a>でのブース展示のサポートも受けられます。<br />
+			見学も大歓迎です。参加費無料ですので、ぜひご参加ください！<br /></p>
+		</div>
             </section>
             <section id="detail">
                 <h2>開催概要</h2>
-		          <dl>
-			         <dt>開催日時</dt>
-			         <dd>　2017年2月18日(土) 10:00～13:30 ※9:40受付開始<br />
-                     　　　タイムスケジュール：<br />
-                     　　　　10:00～10:10 開会挨拶<br />
-                     　　　　10:10～12:00 アイデアピッチ（12チームを予定）<br />
-                     　　　　12:00～13:00 デモ体験・ポスター発表<br />
-                     　　　　13:00～13:15 BREAK<br />
-                     　　　　13:15～13:30 表彰・講評<br /></dd>
-			         <dt>場所</dt>
-                     <dd>　東京工業大学 百年記念館１階 T-POT<br>
-                     　　　(<a href="http://www.cent.titech.ac.jp/index.html">詳細はこちら</a>)<br />
-                     　　　東急目黒線・大井町線大岡山駅下車徒歩１分<br />
-                     　　　東京工業大学大岡山キャンパス・正門わき</dd>
-			         <dt>参加費</dt>
-                     <dd>　無料</dd>
-			         <dt>申込み</dt>
-			         <dd>　以下の要領でメールにてご連絡ください。<br />
-                     　▼企業・見学希望の方へ<br />
-                     　　会場の都合により、ご見学は定員150名までとさせていただきます。<br />
-                     　　予めご了承ください。<br />
-                     　　・連絡先メール　<a href="mailto:info@cbec.titech.ac.jp">info[at]cbec.titech.ac.jp</a><br />
-                     　　・メールタイトルに「コンペ見学希望」とお書きの上、<br />
-                     　　　ご所属・お名前をご連絡ください。<br />
-                     <br />
-                     　▼エントリーを希望される学生へ<br />
-                     　　東工大生が含まれていれば、他大学の学生が混じったチームもエントリ可能です。<br />
-                     　　エントリーフォームに必要事項を記入の上、メールにて提出ください。<br />
-                     　　・応募先メール　<a href="mailto:info@cbec.titech.ac.jp">info[at]cbec.titech.ac.jp</a><br />
-                     　　・締切　<s>2月3日(金) 17:00 JST 必着</s><br />
-                     　　　　→ 2月13日(月) 19:00 まで延長しました<br />
-                     　　・<a href="../sub/doc/entry-sheet.docx">エントリーフォーム</a><br />
-                    　　　 （wordファイルまたはpdfファイルで提出ください）<br /></dd>
-                     <dt id="contact">お問い合わせ</dt>
-			         <dd>　東京工業大学 CBEC事務局 <br />
-                         　メール：　<a href="mailto:info@cbec.titech.ac.jp">info[at]cbec.titech.ac.jp</a></dd>
-                     <dt>審査員<br/>（敬称略）</dt>
-                     <dd>　飯島　淳一（東京工業大学 工学院 経営工学系 教授）<br />
-                     　大和田 純（GMOペパボ株式会社 本社事業部 チーフテクニカルリード）<br />
-                     　竹之下 航洋（株式会社ウフル IoTイノベーションセンター IoTアーキテクト）<br />
-                     　岡島 康憲（株式会社DMM.com DMM.make AKIBA エヴァンジェリスト）<br />
-                     　...and more</dd>
-                  <dt>協賛企業</dt>
-                  <dd>
-                  <p>GMOペパボ株式会社<br>
-                  <a href="https://pepabo.com/" target="_blank"><img src="images/gmopepabo.png" width="400"></a>
-                  <blockquote>GMOペパボ株式会社は、2003年の創業以来、「ロリポップ！」「ムームードメイン」「カラーミーショップ」「minne」「JUGEM」といったインターネットサービスを多数提供しており、現在では、ホスティング事業・EC支援事業・コミュニティ事業・ハンドメイド事業の4つを柱に事業展開しています。</blockquote></p>
-                  <hr style="margin:30px;">
-                  <p>株式会社ウフル<br>
-                  <a href="http://uhuru.co.jp/" target="_blank"><img src="images/uhuru.jpg" width="400"></a>
-                  <blockquote>ウフルはスワヒリ語で「自由」という意味。自由な発想でITを中心とした先端テクノロジーを追求し、新たな領域へチャレンジし続けてきました。IoT・デジタルマーケティング・クラウド、これらを武器に一緒に世界を目指していきましょう！</blockquote>
-                  </p>
-                  <hr style="margin:30px;">
-                  <p>株式会社DMM.com<br>
-                  <a href="https://akiba.dmm-make.com" target="_blank"><img src="images/dmm.png" width="380"/></a>
-                  <blockquote>時代に合わせた柔軟なサービスを展開するDMM.com Group。そのDMMが秋葉原に構える「DMM.make AKIBA」は、ハードウェア開発・試作に必要な機材を取り揃えた「Studio」、シェアオフィスやイベントスペースなどビジネスの拠点として利用できる「Base」で構成された、ハードウェア開発をトータルでサポートする総合型のモノづくり施設です。 </blockquote>
-                  </p>
-                  <hr style="margin:30px;">
-                  <p>株式会社サポーターズ<br>
-                  <a href="https://supporterz.jp/" target="_blank"><img src="images/supporterz.png" width="160"></a>
-                  </p>
-                  <hr style="margin:30px;">
-                  <p>株式会社ミクシィ<br>
-                  <a href="https://mixi.co.jp/" target="_blank"><img src="images/mixi_group.jpg" width="120"></a>
-                  </p>
-                  <hr style="margin:30px;">
-                  <p>アトラシアン株式会社<br>
-                  <a href="https://ja.atlassian.com/" target="_blank"><img src="images/atlassian.png" width="160"></a>
-                  </p>
-                  <hr style="margin:30px;">
-                  <p>クックパッド株式会社<br>
-                  <a href="https://info.cookpad.com/" target="_blank"><img src="images/cookpad.png" width="120" alt=""/></a>
-                  </p>
-                  <hr style="margin:30px;">
-                  <p>トキ・コーポレーション株式会社<br>
-                  <a href="http://www.toki.co.jp/" target="_blank"><img src="images/toki.png" alt=""/></a>
-                  </p>
-                  </dd>
-                  </dl>
+		<dl>
+		    <dt>開催日時</dt>
+		    <dd>　2017年2月18日(土) 10:00～13:30 ※9:40受付開始<br />
+			　　　タイムスケジュール：<br />
+			　　　　10:00～10:10 開会挨拶<br />
+			　　　　10:10～12:00 アイデアピッチ（12チームを予定）<br />
+			　　　　12:00～13:00 デモ体験・ポスター発表<br />
+			　　　　13:00～13:15 BREAK<br />
+			　　　　13:15～13:30 表彰・講評<br /></dd>
+		    <dt>場所</dt>
+                    <dd>　東京工業大学 百年記念館１階 T-POT<br>
+			　　　(<a href="http://www.cent.titech.ac.jp/index.html">詳細はこちら</a>)<br />
+			　　　東急目黒線・大井町線大岡山駅下車徒歩１分<br />
+			　　　東京工業大学大岡山キャンパス・正門わき</dd>
+		    <dt>参加費</dt>
+                    <dd>　無料</dd>
+		    <dt>申込み</dt>
+		    <dd>　以下の要領でメールにてご連絡ください。<br />
+			　▼企業・見学希望の方へ<br />
+			　　会場の都合により、ご見学は定員150名までとさせていただきます。<br />
+			　　予めご了承ください。<br />
+			　　・連絡先メール　<a href="mailto:info@cbec.titech.ac.jp">info[at]cbec.titech.ac.jp</a><br />
+			　　・メールタイトルに「コンペ見学希望」とお書きの上、<br />
+			　　　ご所属・お名前をご連絡ください。<br />
+			<br />
+			　▼エントリーを希望される学生へ<br />
+			　　東工大生が含まれていれば、他大学の学生が混じったチームもエントリ可能です。<br />
+			　　エントリーフォームに必要事項を記入の上、メールにて提出ください。<br />
+			　　・応募先メール　<a href="mailto:info@cbec.titech.ac.jp">info[at]cbec.titech.ac.jp</a><br />
+			　　・締切　<s>2月3日(金) 17:00 JST 必着</s><br />
+			　　　　→ 2月13日(月) 19:00 まで延長しました<br />
+			　　・<a href="../sub/doc/entry-sheet.docx">エントリーフォーム</a><br />
+			　　　 （wordファイルまたはpdfファイルで提出ください）<br /></dd>
+                    <dt id="contact">お問い合わせ</dt>
+		    <dd>　東京工業大学 CBEC事務局 <br />
+                        　メール：　<a href="mailto:info@cbec.titech.ac.jp">info[at]cbec.titech.ac.jp</a></dd>
+                    <dt>審査員<br/>（敬称略）</dt>
+                    <dd>　飯島　淳一（東京工業大学 工学院 経営工学系 教授）<br />
+			　大和田 純（GMOペパボ株式会社 本社事業部 チーフテクニカルリード）<br />
+			　竹之下 航洋（株式会社ウフル IoTイノベーションセンター IoTアーキテクト）<br />
+			　岡島 康憲（株式会社DMM.com DMM.make AKIBA エヴァンジェリスト）<br />
+			　...and more</dd>
+                    <dt>協賛企業</dt>
+                    <dd>
+			<p>GMOペパボ株式会社<br>
+			    <a href="https://pepabo.com/" target="_blank"><img src="images/gmopepabo.png" width="400"></a>
+			    <blockquote>GMOペパボ株式会社は、2003年の創業以来、「ロリポップ！」「ムームードメイン」「カラーミーショップ」「minne」「JUGEM」といったインターネットサービスを多数提供しており、現在では、ホスティング事業・EC支援事業・コミュニティ事業・ハンドメイド事業の4つを柱に事業展開しています。</blockquote></p>
+			<hr style="margin:30px;">
+			<p>株式会社ウフル<br>
+			    <a href="http://uhuru.co.jp/" target="_blank"><img src="images/uhuru.jpg" width="400"></a>
+			    <blockquote>ウフルはスワヒリ語で「自由」という意味。自由な発想でITを中心とした先端テクノロジーを追求し、新たな領域へチャレンジし続けてきました。IoT・デジタルマーケティング・クラウド、これらを武器に一緒に世界を目指していきましょう！</blockquote>
+			</p>
+			<hr style="margin:30px;">
+			<p>株式会社DMM.com<br>
+			    <a href="https://akiba.dmm-make.com" target="_blank"><img src="images/dmm.png" width="380"/></a>
+			    <blockquote>時代に合わせた柔軟なサービスを展開するDMM.com Group。そのDMMが秋葉原に構える「DMM.make AKIBA」は、ハードウェア開発・試作に必要な機材を取り揃えた「Studio」、シェアオフィスやイベントスペースなどビジネスの拠点として利用できる「Base」で構成された、ハードウェア開発をトータルでサポートする総合型のモノづくり施設です。 </blockquote>
+			</p>
+			<hr style="margin:30px;">
+			<p>株式会社サポーターズ<br>
+			    <a href="https://supporterz.jp/" target="_blank"><img src="images/supporterz.png" width="160"></a>
+			</p>
+			<hr style="margin:30px;">
+			<p>株式会社ミクシィ<br>
+			    <a href="https://mixi.co.jp/" target="_blank"><img src="images/mixi_group.jpg" width="120"></a>
+			</p>
+			<hr style="margin:30px;">
+			<p>アトラシアン株式会社<br>
+			    <a href="https://ja.atlassian.com/" target="_blank"><img src="images/atlassian.png" width="160"></a>
+			</p>
+			<hr style="margin:30px;">
+			<p>クックパッド株式会社<br>
+			    <a href="https://info.cookpad.com/" target="_blank"><img src="images/cookpad.png" width="120" alt=""/></a>
+			</p>
+			<hr style="margin:30px;">
+			<p>トキ・コーポレーション株式会社<br>
+			    <a href="http://www.toki.co.jp/" target="_blank"><img src="images/toki.png" alt=""/></a>
+			</p>
+                    </dd>
+                </dl>
             </section>
         </article>
         <footer id="footer">
