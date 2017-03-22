@@ -51,7 +51,7 @@ dt.post-date {
 	margin: 0;
 	padding: 10px 3px 20px 0px; /* 本文エリアのパディング（上右下左） */
 	line-height: 120%;
-	color:#4D65AB;
+	/*color:#4D65AB;*/
 	font-size:14px;
 	padding-left:100px;
 	border-bottom-style: dotted;

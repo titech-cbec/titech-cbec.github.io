@@ -1,0 +1,48 @@
+---
+layout: default
+---
+
+<div class="wrap bg-white">
+  <div class="bar2"></div>
+  <div class="border-bottom indexh2bg"><div class="container"><h2><span id="news"><a href="#news"><img src="/assets/content/themes/layout/images/news.png" alt="news" /></a></span></h2></div></div>
+  <div class="container">
+    <div class="span12 hentry">
+
+
+      <dl class="news clearFix">
+	<dt class="post-date">
+	  <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%Y-%m-%d" }}</time></p>
+   	</dt>
+
+	<dd>
+	  <div class="title" >
+	    <h2>{{ page.title }}</h2>
+	  </div>
+
+	  <div class="hentry">
+	    <div class="section">
+	      <div class="post-content" itemprop="articleBody">
+		{{ content }}
+	      </div>
+	    </div>
+	  </div>
+	</dd>
+      </dl>
+
+      <nav style="text-align:center;">
+	{% if page.previous %}
+	<a href="{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous</a>
+	{% endif %}
+	| <a href="/archive/">Archive</a> |
+	{% if page.next %}
+	<a href="{{ page.next.url }}" title="{{ page.next.title }}">Next &rarr;</a>
+	{% endif %}
+      </nav>
+
+      </div>
+
+
+  </div><!-- /wrap -->
+  {% include footer.html %}
+</div>
+

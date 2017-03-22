@@ -1,38 +1,13 @@
-<!--お知らせ -->
-
-<dt class="post-date">
-    2017.3.22
-</dt>
-<dd><div class="title" >
-    CBEC特別専門学修プログラム説明会開催<br />
-    <p class="subtitle">学生向け説明会を開催します。<br />
-	日時：平成29年4月5日(水)16:50～17:30<br />
-	場所:石川台5号館3階デザイン工房<br />
-	詳細は<strong><a href="/upload/20170405_guidance.pdf" target="_blank">こちら</a></strong>をご覧ください。<br />
-	問合せ先:グローバルアントレプレナー事務室<br />
-	Email <a href="mailto:info@cbec.titech.ac.jp">info@cbec.titech.ac.jp</a><br /></p>
-</div>
-</dd>
-
-
-<!--お知らせ -->
-
-<dt class="post-date">
-    2017.3.22
-</dt>
-<dd><div class="title" >
-    CBEC 2017年度キックオフパーティ開催<br />
-    <p class="subtitle">CBECプログラムのキックオフパーティを開催いたします。<br />
-	関連する教員の皆様、ご興味のある企業等関係者の皆様、<br />
-	そしてエンジニアリングデザインコースを選択または<br />
-	CBEC特別専門学修プログラムを申請予定の学生の皆様、ぜひご参加ください。<br />
-	<br />
-	日時:平成29年4月5日(水)18:00～19:30<br />
-	場所:石川台5号館3階デザイン工房<br />
-	会費:学生 500円、その他 2,000円<br />
-	手配の都合上、3月27日(月)までにお申し込みください。<br />
-	Email <a href="mailto:info@cbec.titech.ac.jp">info@cbec.titech.ac.jp</a><br />
-	詳細は<strong><a href="/upload/20170405_kickoff.pdf" target="_blank">こちら</a></strong>をご覧ください。<br /></p>
-</div>
-</dd>
-
+    {% for post in site.posts %}
+<dl class="news clearFix">
+    <dt class="post-date">
+	{{ post.date | date: "%Y.%m.%d" }}
+    </dt>
+    <dd>
+	<div class="title" >
+	    <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+	</div>
+	{{ post.content }}
+    </dd>
+</dl>
+    {% endfor %}
