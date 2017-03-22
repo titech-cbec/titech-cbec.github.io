@@ -1,0 +1,55 @@
+.section	{
+	padding:15px;
+}
+.section ol	{
+	padding-left:20px;
+}
+.section ol li	{
+
+	
+}
+p.nospase	{
+	text-indent:0em;
+} 
+
+
+.section  a img	{
+    padding: 5px;
+    max-width: 100%;
+    margin:7px;
+    border:solid 1px #dedede;
+}
+
+.section  p {
+	}
+.hentry p a img {
+    padding: 5px;
+    max-width: 100%;
+    border:solid 1px #dedede;
+}
+img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+img.alignright {
+    padding: 4px;
+    margin: 0 0 2px 7px;
+    display: inline;
+}
+img.alignleft {
+    padding: 4px;
+    margin: 0 7px 2px 0;
+    display: inline;
+}
+.alignright {
+    float: right;
+}
+.alignleft {
+    float: left;
+}
+.wp-caption .wp-caption-text	{
+	color:#999999;
+	font-size:10px;
+}
+

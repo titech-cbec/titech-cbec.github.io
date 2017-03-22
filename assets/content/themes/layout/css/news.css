@@ -1,0 +1,101 @@
+/* ------------------------------------------------------------
+▼ニュース投稿
+------------------------------------------------------------ */
+/* --- 新着情報エリア --- */
+div.update {
+	//width: 800px; /* 新着情報エリアの幅 */
+
+
+}
+#area1	{
+	height: 200px; 
+    overflow: hidden;
+	position:relative;
+	max-width:700px;
+}
+#area2	{
+	height: 200px; 
+    overflow: hidden;
+	position:relative;
+	max-width:700px;
+}
+#area3	{
+	height: 200px; 
+    overflow: hidden;
+	position:relative;
+	max-width:700px;
+}
+
+/* --- 新着リスト --- */
+div.update dl {
+	max-width:700px; /* 新着リストの幅 */
+	margin: 0;
+	height:200px;
+
+}
+
+/* --- 日付エリア --- */
+dt.post-date {
+	width: 100px; /* 日付エリアの幅 */
+	float: left;
+	padding: 7px 0 6px 3px; /* 日付エリアのパディング（上右下左） */
+	line-height: 120%;
+	font-weight:bold;
+	
+	font-size:15px;
+	font-family:Helvetica, Arial, sans-serif;
+}
+
+/* --- 本文エリア --- */
+ dd{
+	margin: 0;
+	padding: 10px 3px 20px 0px; /* 本文エリアのパディング（上右下左） */
+	line-height: 120%;
+	color:#4D65AB;
+	font-size:14px;
+	padding-left:100px;
+	border-bottom-style: dotted;
+    border-color: #999;
+    font-weight:bold;
+    border-width: 1px;
+}
+div.update dd a {
+
+}
+
+/* --- clearfix --- */
+.clearFix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.clearFix {
+	min-height: 1px;
+}
+.title .subtitle	{
+	color:#555;
+	font-size:13px;
+	font-weight:normal;
+}
+.post-title a	{
+	margin-left:0px;
+	text-decoration: underline;
+	font-weight:100;
+	color:#4D65AB;
+
+}
+.post-date 	{
+	color:#222!important;
+	font-weight:100;
+}
+
+.post_icon	{
+	position:relative;
+	top:-3px;
+}
+.icon	{
+	height:auto;
+	display:block;
+}

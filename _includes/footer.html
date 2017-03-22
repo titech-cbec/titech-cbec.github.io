@@ -1,0 +1,54 @@
+<script type="text/javascript">
+ $(document).ready(function() {
+     $("#back-top").hide();
+     $(window).scroll(function () {
+         if ($(this).scrollTop() > 150) {
+             $('#back-top').fadeIn();
+         } else {
+             $('#back-top').fadeOut();
+         }
+     });
+
+     $('#back-top a').click(function () {
+         $('body,html').animate({
+             scrollTop: 0
+         }, 800);
+         return false;
+     });
+ });
+</script>
+
+<p id="back-top"><a href="#top"></a></p>
+
+<div id="footer">
+    <div class="container">
+	<ul id="footer-navi">
+	    <li><a href="/"><i class="fa fa-home" style="font-size:18px;"></i>&nbsp;ホーム</a></li>
+	    <li><a href="/overview"><i class="fa fa-circle" style="font-size:9px;"></i>&nbsp;概要</a></li>
+	    <li><a href="/vision/"><i class="fa fa-circle" style="font-size:9px;"></i>&nbsp;ビジョン</a></li>
+	    <li><a href="/organization/"><i class="fa fa-circle" style="font-size:9px;"></i>&nbsp;組織</a></li>
+	    <li><a href="/reports/"><i class="fa fa-circle" style="font-size:9px;"></i>&nbsp;活動報告</a></li>
+	    <li><a href="/research/"><i class="fa fa-circle" style="font-size:9px;"></i>&nbsp;共同研究</a></li>
+	    <li><a href="/access/"><i class="fa fa-circle" style="font-size:9px;"></i>&nbsp;アクセス</a></li>
+	</ul>
+
+	<p class="clear">
+	    <img style="margin-top:20px;float:left;padding-right:20px;border-right:solid 1px #888;" src="/assets/content/themes/layout/images/footer_logo.png" />
+
+	    <div style="margin-top:30px;float:left;padding-left:20px;height:89px;">
+		CBEC公式アカウント<br />
+		<a target="_blank" href="https://www.facebook.com/titech.cbec"><img src="/assets/content/themes/layout/images/facebook.png" /></a>
+	    </div>
+	</p>
+    </div><!-- /container -->
+
+    <div class="fotter-bottom-cont">
+	<div class="copy visible-tablet visible-desktop">
+	    Copyright&copy; {{ site.time | date: '%Y' }} チーム志向越境型 アントレプレナー育成プログラム . All rights reserved.
+	</div>
+    </div>
+
+    <div class="copy-phone visible-phone">
+	Copyright&copy; {{ site.time | date: '%Y' }} チーム志向越境型 アントレプレナー育成プログラム . All rights reserved.
+    </div>
+</div><!-- /footer -->

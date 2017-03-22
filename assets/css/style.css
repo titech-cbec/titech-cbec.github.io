@@ -1,0 +1,287 @@
+/*-------------------------------------------
+This CSS was created for EDP-competiopn-2017
+-------------------------------------------*/
+@charset "utf-8";
+/*-------------------------------------------
+all
+-------------------------------------------*/
+* {
+	margin: 0;
+	padding: 0;
+	background-color: #ffffff;
+	/*-- ホワイト --*/
+}
+body {
+ width: 100%; min-width: 1200px; font: 90%/1.4 "Meiryo",arial,"Hiragino Kaku Gothic Pro",Osaka,"MS PGothic",Sans-Serif; color: #555555;
+}
+a {
+ color: #000000; -webkit-transition: 0.4s ease-in-out; -moz-transition: 0.4s ease-in-out; -o-transition: 0.4s ease-in-out; transition: 0.4s ease-in-out;
+}
+a:hover {
+ color: #000000; text-decoration: none;
+}
+a:active, a:focus {
+ outline: 0
+}
+img {
+ border: 0
+}
+a:hover img {
+ opacity: 0.7; filter: alpha(opacity=70); -ms-filter: "alpha( opacity=70 )"; -moz-opacity: 0.7; -webkit-transition: 0.4s ease-in-out; -moz-transition: 0.4s ease-in-out; -o-transition: 0.4s ease-in-out; transition: 0.4s ease-in-out;
+}
+ol, ul {
+ list-style: none
+}
+/*-------------------------------------------
+clearfix
+-------------------------------------------*/
+.clearfix:after {
+ content: "."; display: block; height: 0; clear: both; visibility: hidden;
+}
+.clearfix {
+ display: inline-table
+}
+/* Hides from IE-mac \*/
+* html .clearfix {
+ height: 1%
+}
+.clearfix {
+	display: block;
+	background-color: #FFFFFF;
+}
+/* End hide from IE-mac */
+* html body {
+ background: url(null/index.html) fixed
+}
+/*-------------------------------------------
+Common
+-------------------------------------------*/
+p {
+	line-height: 200%;
+	background-color: #FFFFFF;
+}
+section .blc strong {
+ color: #FB7E2A; font-weight: bold;
+}
+.blc, .subBlc, .miniBlc {
+ margin: 0 auto; border: 5px solid #ccc;
+}
+.blc {
+	width: 930px;
+	margin: 20px auto;
+	padding: 20px;
+	background-color: #FFFFFF;
+}
+.subBlc {
+ width: 960px; margin: 30px auto; border: 10px solid #b6c46e;
+}
+.subBlc h3 {
+ background: #b6c46e; text-align: center; padding: 10px; 
+}
+.subBlc p {
+ padding: 10px
+}
+.miniBlc {
+	width: 450px;
+	float: left;
+	margin-top: 0;
+	margin-right: 5px;
+	margin-left: 5px;
+	margin-bottom: 20px;
+	height: 400px;
+	padding: 15px;
+	background-color: #FFFFFF;
+}
+.miniBlc .miniBlc_head{
+	height: 90px;
+	background-color: #FFFFFF;
+}
+.miniBlc .miniBlc_head img{
+ float: left; margin-right: 20px;
+}
+.miniBlc h3 {
+	font-size: 160%;
+	color: #fb7e2b;
+	font-weight: bold;
+	height: 46px;
+	line-height: 46px;
+	background-color: #FFFFFF;
+}
+.miniBlc .team {
+	font-size: 100%;
+	color: #fb7e2b;
+	background-color: #FFFFFF;
+}
+.miniBlc .catch {
+	font-size: 100%;
+	color: #fb7e2b;
+	font-weight: bold;
+	height: 42px;
+	background-color: #FFFFFF;
+}
+.miniBlc .appli_about {
+	height: 224px;
+	background-color: #FFFFFF;
+}
+.miniBlc .screenshot {
+ float: left;
+ margin: 14px;
+}
+.miniBlc .screenshot img{
+}
+.miniBlc .screenshot p{
+ font-weight: bold;
+}
+/*-------------------------------------------
+Header
+-------------------------------------------*/
+#header {
+	margin: 0 auto;
+	border-bottom: 2px solid #000000;
+	background-color: #ffffff;
+		/*-- ホワイト --*/
+
+}
+#header_content {
+ width: 1200px; margin: 0 auto;
+}
+.logo {
+ float: left; margin: 10px;
+}
+.social {
+ float: left; margin: 20px 10px 0;
+}
+/*-------------------------------------------
+Navigation
+-------------------------------------------*/
+#nav {
+ float: right
+}
+#nav ul li {
+ float: left
+}
+#nav ul li a {
+ display: block; height: 65px; width: 140px; text-align: center; line-height: 65px; text-decoration: none; border-left: 1px solid #eee;
+}
+#nav ul li.linkabout a {
+	display: block;
+	background-color: #abb1b5;
+	color: #fff;
+}
+#nav ul li.linkGaiyou a {
+	display: block;
+	background-color: #b4ada9;
+	color: #fff;
+}
+#nav ul li.linkContact a {
+	color: #FFFFFF;
+	border-right: 1px solid #eee;
+	background-color: #afafb0;
+}
+#nav ul li a:hover {
+	background-color: #d3d6dd;
+	color: #000000;
+}
+/*-------------------------------------------
+HeadImg
+-------------------------------------------*/
+#head {
+	text-align: center;
+}
+#head h1 {
+ height: 500px; margin: 0;
+}
+/*-------------------------------------------
+Section
+-------------------------------------------*/
+section h2 {
+	background-color: #0000cd;
+	/*-- ミディアムブルー --*/
+	text-align: center;
+	padding: 5px 0;
+	margin: 50px 0;
+	font-size: 40px;
+	color: #FFFFFF;
+}
+#about h2 {
+ margin: 0 0 50px 0
+}
+.txt {
+ text-align: center; margin: 20px 0;
+}
+#applications ul {
+	width: 1000px;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	background-color: #EAE8E1;
+}
+.logoList {
+ width: 903px; margin: 10px auto;
+}
+.logoList img {
+ width: 220px; display: inline-block; border: 1px solid #ccc;
+}
+/*-------------------------------------------
+Detail
+-------------------------------------------*/
+dl {
+	border: 5px solid #888;
+	margin: 10px auto;
+	width: 700px;
+	background: #ffff66;
+	/*-- 黄色 --*/
+}
+dl:after {
+ clear: both; content: "."; display: block; height: 0; visibility: hidden;
+}
+dl dt {
+	clear: left;
+	float: left;
+	font-size: 100%;
+	width: 160px;
+	text-align: right;
+	border-top: 1px solid #888;
+	padding: 10px;
+	line-height: 200%;
+	margin-top: -1px;
+	color: #000;
+	background-color: #ffff66;
+	/*-- 黄色 --*/
+}
+dl dd {
+ margin-left: 180px; text-align: left; font-size: 100%; border-left: 1px solid #888; border-top: 1px solid #888; padding: 10px; line-height: 200%; margin-top: -1px; background: #ffffff;
+}
+dl dd input[type="text"], dl dd input[type="email"], dl dd textarea {
+ width: 80%; height: 30px; border: 1px solid #666; font-size: 120%; padding: 2px 5px;
+}
+dl dd select {
+ width: 80%; padding: 10px; border: 1px solid #666;
+}
+dt span {
+ color: #ff0000; margin-left: 10px;
+}
+.wpcf7-list-item-label {
+ margin-left: 5px; margin-right: 15px;
+}
+/*-------------------------------------------
+Footer
+-------------------------------------------*/
+#footer {
+	background-color: #d3d6dd;
+	text-align: center;
+	padding: 20px 0 0 0;
+	color: #000000;
+	font-size: 100%;
+	overflow: hidden;
+	margin-top: 60px;
+}
+#footer .inner {
+	width: 960px;
+	margin: 0 auto;
+	background-color: #d3d6dd;
+	color: #000000;
+}
+
+/* Localized */
