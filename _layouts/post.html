@@ -4,21 +4,22 @@ layout: default
 
 <div class="wrap bg-white">
   <div class="bar2"></div>
-  <div class="border-bottom indexh2bg"><div class="container"><h2><span id="news"><a href="#news"><img src="/assets/content/themes/layout/images/news.png" alt="news" /></a></span></h2></div></div>
+  <div class="border-bottom indexh2bg">
+    <div class="container">
+      <h2><span id="news"><a href="#news"><img src="/assets/content/themes/layout/images/news.png" alt="news" /></a></span></h2>
+    </div>
+  </div>
+
   <div class="container">
-    <div class="span12 hentry">
+    <div class="hentry">
 
 
       <dl class="news clearFix">
 	<dt class="post-date">
 	  <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%Y-%m-%d" }}</time></p>
    	</dt>
-
 	<dd>
-	  <div class="title" >
-	    <h2>{{ page.title }}</h2>
-	  </div>
-
+	  <h2 class="title">{{ page.title }}</h2>
 	  <div class="hentry">
 	    <div class="section">
 	      <div class="post-content" itemprop="articleBody">
@@ -39,10 +40,8 @@ layout: default
 	{% endif %}
       </nav>
 
-      </div>
-
-
-  </div><!-- /wrap -->
+    </div><!-- /#hentry -->
+  </div><!-- /#conteiner -->
   {% include footer.html %}
-</div>
+</div><!-- /#wrap -->
 
